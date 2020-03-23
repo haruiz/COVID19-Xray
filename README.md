@@ -2,12 +2,12 @@
 
 ## Description
 More and more companies and researchers in China and around the world are rolling out artificial intelligence (AI)-based systems that can process hundreds of computed tomography (CT) images in seconds to speed up diagnosis of COVID-19 and assist in its containment.
-This ongoing development was focused on demonstrating that a pre-trained CNN model can be adapted to detect the novel COVID-19 from X-ray and CT images. Thus, for this experiment, a tiny modified version of VGG16 was retrained to predict from an x-ray whether someone has the COVID-19 virus or not; This model was able to predict the disease with a 95% accuracy. However, given the number of images, it could not be enough to use a medical prediction tool. Before this model should undergo a much more thorough evaluation.
+This <b>ongoing development</b> was focused on demonstrating that a pre-trained CNN model can be adapted to detect the novel COVID-19 from X-ray and CT images. Thus, for this experiment, a tiny modified version of VGG16 was retrained to predict from an x-ray whether someone has the COVID-19 virus or not; This model was able to predict the disease with a 95% accuracy. <b>However, given the number of images, it could not be enough to use a medical prediction tool. Before this model should undergo a much more thorough evaluation.</b>
 
 ![Test image](image.png)
 
 ## Dataset
-The chest X-ray and CT images used to train the model were mainly taken from the public-available dataset https://github.com/ieee8023/covid-chestxray-dataset, where there are 23 images from patients confirmed with the virus, and 73 from people without it. Additionally, 40 extra photos for healthy patients were taken for the Kaggle dataset https://www.kaggle.com/nih-chest-xrays/data, published by  The National Institutes of Health. In total 150 images from each class where used. Both datasets were augmented using the script:
+The chest X-ray and CT images used to train the model were mainly taken from the public-available dataset https://github.com/ieee8023/covid-chestxray-dataset, where there are 23 images from patients confirmed with the virus, and 73 from people without it. Additionally, 40 extra photos for healthy patients were taken for the Kaggle dataset https://www.kaggle.com/nih-chest-xrays/data, published by  The National Institutes of Health. In total 150 images from each class were used. Both datasets were augmented using the script:
 ````python
 import imgaug as ia
 import imgaug.augmenters as iaa
