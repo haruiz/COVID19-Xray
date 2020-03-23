@@ -40,8 +40,8 @@ import numpy as np
 try:
     # whether to force a fresh download of github repo unconditionally. Default is False.
     model = torch.hub.load(
-            "haruiz/CONV19Xray",
-            "conv19", 
+            "haruiz/COVID19-Xray",
+            "covid19", 
             pretrained=True, 
             force_reload =False)
 
