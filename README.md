@@ -7,7 +7,7 @@ This <b>ongoing development</b> was focused on demonstrating that a pre-trained 
 ![Test image](image.png)
 
 ## Dataset
-The chest X-ray and CT images used to train the model were mainly taken from the public-available dataset https://github.com/ieee8023/covid-chestxray-dataset, where there are 23 images from patients confirmed with the virus, and 73 from people without it. Additionally, 40 extra photos for healthy patients were taken for the Kaggle dataset https://www.kaggle.com/nih-chest-xrays/data, published by  The National Institutes of Health. In total 150 images from each class were used. Both datasets were augmented using the script:
+The chest X-ray and CT images used to train the model were mainly taken from the public-available dataset https://github.com/ieee8023/covid-chestxray-dataset, where there are 23 images from patients confirmed with the virus, and 73 from people without it. Additionally, 40 extra photos for healthy patients were taken for the Kaggle dataset https://www.kaggle.com/nih-chest-xrays/data, published by  The National Institutes of Health. In total 150 images from each class were used. Further Both datasets were augmented using the script:
 ````python
 import imgaug as ia
 import imgaug.augmenters as iaa
