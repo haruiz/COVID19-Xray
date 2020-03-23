@@ -30,7 +30,7 @@ def augment_data(images, out_folder):
 
 ## How to use it??
 
-The model is public-available in GitHub, and can be accessed using torch.hub, was written using PyTorch
+The model is public-available in GitHub, and can be accessed using torch.hub.
 
 ````python
 import torch
